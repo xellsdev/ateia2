@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ATEIA-OLTRA Bahía de Algeciras, asociación empresarial de logística, transporte y representación aduanera.">
+  <title>ATEIA-OLTRA | Bahía de Algeciras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>Bahía de Algeciras · Campo de Gibraltar</span>
+        <div class="utility-links">
+          <a href="mailto:secretaria@ateiacg.com">secretaria@ateiacg.com</a>
+          <a href="https://wa.me/34956646913" aria-label="WhatsApp">WhatsApp</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="ATEIA inicio">
+        <img src="images/LOGO.png" alt="ATEIA-OLTRA Bahía de Algeciras">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#socios">Asociados</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#comisiones">Comisiones</a>
+        <a href="#formacion">Formación</a>
+        <a href="#empleo">Empleo</a>
+      </nav>
+      <button class="login-button" type="button" data-open-login aria-label="Acceso privado">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0H5Z"/></svg>
+        <span>Acceso</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-grid" aria-hidden="true">
+        <div class="port-line port-line-a"></div>
+        <div class="port-line port-line-b"></div>
+        <div class="port-line port-line-c"></div>
+        <div class="container crane">
+          <div class="crane-tower"></div><div class="crane-arm"></div><div class="crane-cable"></div>
+        </div>
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow">Asociación empresarial · Algeciras</p>
+        <h1>Impulsamos el comercio internacional desde la Bahía de Algeciras</h1>
+        <p class="hero-lead">ATEIA-OLTRA representa a las empresas líderes del transporte multimodal, la logística y la representación aduanera en el Estrecho de Gibraltar.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#servicios">Conoce nuestros servicios</a>
+          <a class="text-link" href="#socios">Directorio de asociados <span>→</span></a>
+        </div>
+        <div class="hero-stat">
+          <strong>FETEIA-OLTRA</strong>
+          <span>Miembro activo del Comité Ejecutivo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Sectores representados">
+      <div class="container ticker-inner">
+        <span>Tránsito internacional</span><i></i><span>Despacho aduanero</span><i></i><span>Logística multimodal</span><i></i><span>Consignación</span>
+      </div>
+    </section>
+
+    <section id="socios" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">Tejido empresarial</p>
+            <h2>Empresas asociadas</h2>
+          </div>
+          <p>Unimos a operadores transitarios, agencias de aduanas, empresas almacenistas, consignatarias y compañías navieras.</p>
+        </div>
+        <div class="filter-bar">
+          <label>
+            <span class="sr-only">Buscar empresa</span>
+            <input id="company-search" type="search" placeholder="Buscar empresa o actividad">
+          </label>
+          <button class="filter-chip active" data-filter="all">Todas</button>
+          <button class="filter-chip" data-filter="aduanas">Aduanas</button>
+          <button class="filter-chip" data-filter="logistica">Logística</button>
+        </div>
+        <div id="company-grid" class="company-grid"></div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">Qué hacemos</p>
+            <h2>Servicios a nuestros asociados</h2>
+          </div>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 42 11v12c0 10-7 17-18 21C13 40 6 33 6 23V11l18-7Zm-9 19 6 6 13-15"/></svg>
+            <h3>Representación institucional</h3>
+            <p>Defensa ante la Autoridad Portuaria, Aduanas, Sanidad Exterior y administraciones públicas.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 8h30v32H9zM15 15h18M15 22h18M15 29h11"/></svg>
+            <h3>Información técnica</h3>
+            <p>Circulares operativas, cambios regulatorios y alertas sobre el recinto portuario.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 7 6 15l18 8 18-8-18-8Zm-18 8v12l18 8 18-8V15M12 27v8"/></svg>
+            <h3>Formación continua</h3>
+            <p>Programas técnicos impartidos por especialistas para profesionales del sector.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c5 5 7 11 7 17s-2 12-7 17c-5-5-7-11-7-17S19 12 24 7Z"/></svg>
+            <h3>Proyección exterior</h3>
+            <p>Presencia en ferias y congresos nacionales e internacionales para captar nuevas oportunidades.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="comisiones" class="section commissions">
+      <div class="container commissions-layout">
+        <div class="commissions-intro">
+          <p class="eyebrow dark">Órganos de trabajo</p>
+          <h2>Comisiones técnicas</h2>
+          <p>Profesionales de las empresas asociadas debaten y fijan criterios sobre las materias que condicionan la competitividad del puerto.</p>
+        </div>
+        <div class="commission-list">
+          <button class="commission-row active" data-commission="Ejecutivo"><span>01</span><strong>Comité Ejecutivo</strong><small>Dirección estratégica</small><b>→</b></button>
+          <button class="commission-row" data-commission="Aduanas"><span>02</span><strong>Comisión de Aduanas</strong><small>Despacho y coordinación</small><b>→</b></button>
+          <button class="commission-row" data-commission="Formación"><span>03</span><strong>Comisión de Formación</strong><small>Desarrollo profesional</small><b>→</b></button>
+          <button class="commission-row" data-commission="Internacionalización"><span>04</span><strong>Comisión de Internacionalización</strong><small>Mercados exteriores</small><b>→</b></button>
+          <button class="commission-row" data-commission="Jurídica"><span>05</span><strong>Comisión de Asuntos Jurídicos</strong><small>Marco regulatorio</small><b>→</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="section section-blue">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div>
+            <p class="eyebrow">Área pública</p>
+            <h2>Formación especializada</h2>
+          </div>
+          <a class="button button-outline" href="#formacion">Ver histórico</a>
+        </div>
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-date"><strong>18</strong><span>MAR</span></div>
+            <div class="course-content">
+              <p class="course-meta">Presencial · 16 horas</p>
+              <h3>Operativa avanzada de despacho aduanero</h3>
+              <p>Procedimientos, clasificación arancelaria y documentación del comercio exterior.</p>
+              <button class="course-link" data-course="Operativa avanzada de despacho aduanero">Solicitar plaza →</button>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-date"><strong>24</strong><span>ABR</span></div>
+            <div class="course-content">
+              <p class="course-meta">Híbrida · 12 horas</p>
+              <h3>Nuevas normativas de transporte y logística</h3>
+              <p>Actualización técnica sobre operación portuaria y cadena de suministro.</p>
+              <button class="course-link" data-course="Nuevas normativas de transporte y logística">Solicitar plaza →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="empleo" class="section employment">
+      <div class="container employment-layout">
+        <div class="employment-copy">
+          <p class="eyebrow dark">Bolsa de talento</p>
+          <h2>Desarrolla tu carrera en el sector portuario</h2>
+          <p>Conecta con las empresas transitarias, logísticas y aduaneras de la Bahía de Algeciras.</p>
+          <div class="employment-actions">
+            <button class="button button-primary" data-open-cv>Registrar mi currículum</button>
+            <a class="text-link" href="#offers">Ver ofertas <span>→</span></a>
+          </div>
+        </div>
+        <div id="offers" class="offer-panel">
+          <div class="offer-heading"><h3>Ofertas vigentes</h3><span>3 nuevas</span></div>
+          <article class="offer">
+            <div><h4>Responsable de Operaciones Aduaneras</h4><p>Noatum · Algeciras</p></div>
+            <span>Tiempo completo</span>
+          </article>
+          <article class="offer">
+            <div><h4>Técnico/a de Tráfico Internacional</h4><p>Totallogistic · Palmones</p></div>
+            <span>Tiempo completo</span>
+          </article>
+          <article class="offer">
+            <div><h4>Asistente de Compras Logísticas</h4><p>Hispamaroc · Algeciras</p></div>
+            <span>Híbrido</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="images/LOGO.png" alt="ATEIA-OLTRA">
+        <p>Organización para la logística, el transporte y la representación aduanera.</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <address>Edificio Cámara de Comercio<br>Paseo de la Cornisa s/n<br>11207 Algeciras</address>
+        <a href="tel:+34956646913">956 646 913</a>
+      </div>
+      <div>
+        <h3>Enlaces institucionales</h3>
+        <a href="mailto:secretaria@ateiacg.com">secretaria@ateiacg.com</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de privacidad</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 ATEIA-OLTRA Bahía de Algeciras</span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <dialog id="login-modal" class="modal">
+    <form method="dialog" class="modal-card">
+      <button class="modal-close" value="close" aria-label="Cerrar">×</button>
+      <img src="images/LOGO.png" alt="ATEIA-OLTRA">
+      <p class="eyebrow dark">Acceso privado</p>
+      <h2>Acceso de Secretaría</h2>
+      <label>Email institucional<input type="email" placeholder="secretaria@ateiacg.com"></label>
+      <label>Contraseña<input type="password" placeholder="••••••••"></label>
+      <button class="button button-primary" type="button" id="demo-access">Entrar al prototipo</button>
+      <button class="password-link" type="button">¿Olvidaste tu contraseña?</button>
+    </form>
+  </dialog>
+
+  <dialog id="demo-modal" class="modal dashboard-modal">
+    <div class="dashboard">
+      <aside class="dashboard-sidebar">
+        <img src="images/LOGO.png" alt="ATEIA-OLTRA">
+        <div class="secretariat-user">
+          <span>RO</span>
+          <div><strong>Rocío Arias</strong><small>Secretaría General</small></div>
+        </div>
+        <nav>
+          <button class="dash-nav active">Resumen</button>
+          <button class="dash-nav">Asociados</button>
+          <button class="dash-nav">Formación y matrículas</button>
+          <button class="dash-nav">Empleo</button>
+          <button class="dash-nav">Documentos</button>
+          <button class="dash-nav">Calendario maestro</button>
+          <button class="dash-nav">Comunicaciones</button>
+        </nav>
+      </aside>
+      <section class="dashboard-main">
+        <div class="dashboard-top">
+          <div><p>Panel de Secretaría · Datos ficticios</p><h2>Gestión general</h2></div>
+          <form method="dialog"><button class="modal-close dashboard-close" value="close" aria-label="Cerrar">×</button></form>
+        </div>
+        <div class="dashboard-cards">
+          <article><span>Empresas asociadas</span><strong>18</strong><small>+2 este año</small></article>
+          <article><span>Cursos activos</span><strong>6</strong><small>84 matrículas</small></article>
+          <article><span>Cuotas pendientes</span><strong>3</strong><small>2.450 €</small></article>
+          <article><span>Solicitudes de empleo</span><strong>12</strong><small>5 por revisar</small></article>
+        </div>
+        <div class="secretariat-content">
+          <div class="dashboard-panel associate-panel">
+            <div class="dashboard-panel-heading">
+              <h3>Últimas solicitudes</h3>
+              <button type="button">Ver todas</button>
+            </div>
+            <div class="request-table">
+              <div class="request-head"><span>Empresa</span><span>Tipo</span><span>Estado</span><span>Acción</span></div>
+              <div class="request-row"><strong>Logística Estrecho S.L.</strong><span>Nueva alta</span><em class="status pending">Pendiente</em><button type="button">Revisar</button></div>
+              <div class="request-row"><strong>Global Trade Cádiz S.A.</strong><span>Interlocutor Aduanas</span><em class="status review">Validar</em><button type="button">Revisar</button></div>
+              <div class="request-row"><strong>Marítima Sureste S.L.</strong><span>Actualización censo</span><em class="status approved">Completo</em><button type="button">Abrir</button></div>
+            </div>
+          </div>
+          <div class="dashboard-panel master-calendar">
+            <div class="dashboard-panel-heading">
+              <h3>Calendario maestro</h3>
+              <button type="button">+ Nuevo evento</button>
+            </div>
+            <div class="calendar-month"><strong>Marzo 2026</strong><span>‹ &nbsp; ›</span></div>
+            <div class="master-events">
+              <div class="master-event"><time><b>18</b><span>MAR</span></time><div><strong>Comisión de Aduanas</strong><small>10:00 · Cámara de Comercio</small></div></div>
+              <div class="master-event"><time><b>20</b><span>MAR</span></time><div><strong>Comité Ejecutivo</strong><small>18:30 · Salón de juntas</small></div></div>
+              <div class="master-event"><time><b>24</b><span>MAR</span></time><div><strong>Curso: Novedades Aduaneras</strong><small>09:30 · Aula virtual</small></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <dialog id="course-modal" class="modal">
+    <form id="course-form" class="modal-card">
+      <button class="modal-close" type="button" data-close aria-label="Cerrar">×</button>
+      <p class="eyebrow dark">Solicitudes de formación</p>
+      <h2 id="course-title">Solicitar plaza</h2>
+      <label>Nombre y apellidos<input required type="text" placeholder="Nombre completo"></label>
+      <label>Email<input required type="email" placeholder="correo@empresa.com"></label>
+      <label>Empresa<input type="text" placeholder="Razón social"></label>
+      <button class="button button-primary" type="submit">Enviar solicitud</button>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status">Solicitud enviada correctamente</div>
+  <script src="script.js"></script>
+</body>
+</html>
