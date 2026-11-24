@@ -259,20 +259,21 @@
           <div><strong>Rocío Arias</strong><small>Secretaría General</small></div>
         </div>
         <nav>
-          <button class="dash-nav active">Resumen</button>
-          <button class="dash-nav">Asociados</button>
-          <button class="dash-nav">Formación y matrículas</button>
-          <button class="dash-nav">Empleo</button>
-          <button class="dash-nav">Documentos</button>
-          <button class="dash-nav">Calendario maestro</button>
-          <button class="dash-nav">Comunicaciones</button>
+          <button class="dash-nav active" data-dashboard-section="resumen">Resumen</button>
+          <button class="dash-nav" data-dashboard-section="asociados">Asociados</button>
+          <button class="dash-nav" data-dashboard-section="formacion">Formación y matrículas</button>
+          <button class="dash-nav" data-dashboard-section="empleo">Empleo</button>
+          <button class="dash-nav" data-dashboard-section="documentos">Documentos</button>
+          <button class="dash-nav" data-dashboard-section="calendario">Calendario maestro</button>
+          <button class="dash-nav" data-dashboard-section="comunicaciones">Comunicaciones</button>
         </nav>
       </aside>
       <section class="dashboard-main">
         <div class="dashboard-top">
-          <div><p>Panel de Secretaría · Datos ficticios</p><h2>Gestión general</h2></div>
+          <div><p>Panel de Secretaría · Datos ficticios</p><h2 id="dashboard-title">Gestión general</h2></div>
           <form method="dialog"><button class="modal-close dashboard-close" value="close" aria-label="Cerrar">×</button></form>
         </div>
+        <div id="dashboard-view">
         <div class="dashboard-cards">
           <article><span>Empresas asociadas</span><strong>18</strong><small>+2 este año</small></article>
           <article><span>Cursos activos</span><strong>6</strong><small>84 matrículas</small></article>
@@ -283,27 +284,28 @@
           <div class="dashboard-panel associate-panel">
             <div class="dashboard-panel-heading">
               <h3>Últimas solicitudes</h3>
-              <button type="button">Ver todas</button>
+              <button type="button" data-dashboard-section="asociados">Ver todas</button>
             </div>
             <div class="request-table">
               <div class="request-head"><span>Empresa</span><span>Tipo</span><span>Estado</span><span>Acción</span></div>
-              <div class="request-row"><strong>Logística Estrecho S.L.</strong><span>Nueva alta</span><em class="status pending">Pendiente</em><button type="button">Revisar</button></div>
-              <div class="request-row"><strong>Global Trade Cádiz S.A.</strong><span>Interlocutor Aduanas</span><em class="status review">Validar</em><button type="button">Revisar</button></div>
-              <div class="request-row"><strong>Marítima Sureste S.L.</strong><span>Actualización censo</span><em class="status approved">Completo</em><button type="button">Abrir</button></div>
+              <div class="request-row"><strong>Logística Estrecho S.L.</strong><span>Nueva alta</span><em class="status pending">Pendiente</em><button type="button" data-dashboard-action="detail" data-value="Logística Estrecho S.L.">Revisar</button></div>
+              <div class="request-row"><strong>Global Trade Cádiz S.A.</strong><span>Interlocutor Aduanas</span><em class="status review">Validar</em><button type="button" data-dashboard-action="detail" data-value="Global Trade Cádiz S.A.">Revisar</button></div>
+              <div class="request-row"><strong>Marítima Sureste S.L.</strong><span>Actualización censo</span><em class="status approved">Completo</em><button type="button" data-dashboard-action="detail" data-value="Marítima Sureste S.L.">Abrir</button></div>
             </div>
           </div>
           <div class="dashboard-panel master-calendar">
             <div class="dashboard-panel-heading">
               <h3>Calendario maestro</h3>
-              <button type="button">+ Nuevo evento</button>
+              <button type="button" data-dashboard-action="new-event">+ Nuevo evento</button>
             </div>
-            <div class="calendar-month"><strong>Marzo 2026</strong><span>‹ &nbsp; ›</span></div>
+            <div class="calendar-month"><button type="button" data-dashboard-action="previous-month" aria-label="Mes anterior">‹</button><strong data-calendar-month>Marzo 2026</strong><button type="button" data-dashboard-action="next-month" aria-label="Mes siguiente">›</button></div>
             <div class="master-events">
               <div class="master-event"><time><b>18</b><span>MAR</span></time><div><strong>Comisión de Aduanas</strong><small>10:00 · Cámara de Comercio</small></div></div>
               <div class="master-event"><time><b>20</b><span>MAR</span></time><div><strong>Comité Ejecutivo</strong><small>18:30 · Salón de juntas</small></div></div>
               <div class="master-event"><time><b>24</b><span>MAR</span></time><div><strong>Curso: Novedades Aduaneras</strong><small>09:30 · Aula virtual</small></div></div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </div>
